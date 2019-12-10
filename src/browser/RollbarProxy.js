@@ -5,6 +5,7 @@
  *
  * Copyright(c) Resgrid 2015 (http://resgrid.com)
  */
+var browser = require('cordova/platform');
 
 
 var roll = {};
@@ -18,6 +19,7 @@ roll.simulateCrash = function (successCallback, errorCallback) {
 };
 
 module.exports = {
-  roll: roll
+  init: roll.init,
+  simulateCrash: roll.simulateCrash
 };
 require('cordova/exec/proxy').add('Rollbar', module.exports);
