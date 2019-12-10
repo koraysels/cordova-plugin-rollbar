@@ -1,2 +1,8 @@
 rollbar.sublime-project
 rollbar.sublime-workspace
+/.idea/.gitignore
+/.idea/cordova-plugin-rollbar.iml
+/.idea/encodings.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
