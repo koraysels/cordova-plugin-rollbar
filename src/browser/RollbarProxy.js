@@ -7,14 +7,17 @@
  */
 
 
-var Rollbar = {};
+var roll = {};
 
-Rollbar.init = function (successCallback, errorCallback) {
+roll.init = function (successCallback, errorCallback) {
   return successCallback()
 };
 
-Rollbar.simulateCrash = function (successCallback, errorCallback) {
+roll.simulateCrash = function (successCallback, errorCallback) {
   return successCallback()
 };
 
-module.exports = Rollbar;
+module.exports = {
+  roll: roll
+};
+require('cordova/exec/proxy').add('Rollbar', module.exports);
